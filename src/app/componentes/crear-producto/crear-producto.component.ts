@@ -48,7 +48,13 @@ export class CrearProductoComponent implements OnInit {
   }
 
   agregar() {
-    if (this.formProducto.invalid) return
+    if (this.formProducto.invalid) {
+      this.notificacion.show(
+        'Debe llenar todos los campos',
+          { classname: 'bg-danger text-light'}
+      )
+      return
+    }
 
     this.dataProducto = {
       id: 0,

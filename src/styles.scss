@@ -2,3 +2,9 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+.form-control {
+  &.ng-invalid.ng-touched {
+    border-color: #dc3545;
+  }
+}
