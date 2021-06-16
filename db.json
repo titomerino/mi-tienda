@@ -1,0 +1,111 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Salvador",
+      "apellidos": "Guardado",
+      "telefono": "7777-7777",
+      "correo": "merinotito6@gmail.com",
+      "nit": "101-100693-1001-1"
+    },
+    {
+      "id": "2",
+      "nombre": "Antonio",
+      "apellidos": "Galdames",
+      "telefono": "7777-7777",
+      "correo": "merinotito6@gmail.com",
+      "nit": "101-100693-1001-1"
+    },
+    {
+      "id": "3",
+      "nombre": "Felipe",
+      "apellidos": "Flores",
+      "telefono": "7777-7777",
+      "correo": "merinotito6@gmail.com",
+      "nit": "101-100693-1001-1"
+    },
+    {
+      "id": "4",
+      "nombre": "Andres",
+      "apellidos": "Quejada",
+      "telefono": "7777-7777",
+      "correo": "merinotito6@gmail.com",
+      "nit": "101-100693-1001-1"
+    },
+    {
+      "id": "5",
+      "nombre": "Emiliano Pedroso",
+      "apellidos": "Quintanilla",
+      "telefono": "7878-7878",
+      "correo": "merino@gmail.com",
+      "nit": "101-021545-1200-1"
+    },
+    {
+      "nombre": "Emiliano Pedroso 2",
+      "apellidos": "Quintanilla",
+      "telefono": "7878-7878",
+      "correo": "merino@gmail.com",
+      "nit": "101-021545-1200-1",
+      "id": "KVLmpfc"
+    }
+  ],
+  "ordenes": [
+    {
+      "idProducto": "1",
+      "idCliente": "1",
+      "idOrden": "1",
+      "cantidad": "1",
+      "fecha": "15-5-2021"
+    }
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Debora",
+      "descripcion": "Guardado",
+      "precio": 250
+    },
+    {
+      "id": 2,
+      "nombre": "Producto 2",
+      "descripcion": "Lorem ipsum modificado",
+      "precio": 1000.5
+    },
+    {
+      "id": 3,
+      "nombre": "Producto 3",
+      "descripcion": "Nissan sentra 2014",
+      "precio": 1500
+    },
+    {
+      "id": 4,
+      "nombre": "Producto 4",
+      "descripcion": "Una cama doble colchon negra",
+      "precio": 2500.55
+    },
+    {
+      "id": 5,
+      "nombre": "Producto 5",
+      "descripcion": "Nuevo teléfono celular nokia",
+      "precio": 3500
+    },
+    {
+      "id": 6,
+      "nombre": "Producto 6",
+      "descripcion": "lorem",
+      "precio": 400
+    },
+    {
+      "id": 7,
+      "nombre": "Mesa",
+      "descripcion": "Mesa para computadora",
+      "precio": 600
+    },
+    {
+      "id": 8,
+      "nombre": "Nissan sentra 2014",
+      "descripcion": "Importado poco uso familiar.",
+      "precio": 6500
+    }
+  ]
+}

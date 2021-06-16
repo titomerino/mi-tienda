@@ -1,0 +1,22 @@
+header {
+  background-color: #6e6e6e;
+
+  nav {
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+.container {
+  overflow-x: auto;
+
+  &.-full-height {
+    min-height: 80vh;
+  }
+}
+
+footer {
+  background-color: #79c15d;
+  padding: 2rem;
+}

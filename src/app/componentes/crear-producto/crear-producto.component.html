@@ -1,0 +1,61 @@
+<h3>{{titulo}}</h3>
+
+<p class="mt-4">
+  <button
+    class="btn btn-secondary"
+    routerLink="/productos"
+    type="button"
+  >
+    Volver
+  </button>
+</p>
+
+<form
+  (ngSubmit)="agregar()"
+  name="Producto"
+  [formGroup]="formProducto"
+>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputNombre">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputNombre"
+          formControlName="nombre"
+          required
+        >
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputPrecio">Precio</label>
+        <input
+          type="number"
+          class="form-control"
+          id="inputPrecio"
+          formControlName="precio"
+          required
+        >
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputDescripcion">Descripción</label>
+    <textarea
+      class="form-control"
+      id="inputDescripcion"
+      rows="3"
+      formControlName="descripcion"
+      required
+    ></textarea>
+  </div>
+  <hr>
+  <div class="">
+    <button
+      class="btn btn-primary"
+      type="submit"
+    >Guardar</button>
+  </div>
+</form>
