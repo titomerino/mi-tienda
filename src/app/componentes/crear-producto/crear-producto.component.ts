@@ -15,7 +15,6 @@ export class CrearProductoComponent implements OnInit {
 
   formProducto: FormGroup
   dataProducto: Producto
-  modoEditar: boolean
   idProducto: number
   titulo: string
 
@@ -26,7 +25,6 @@ export class CrearProductoComponent implements OnInit {
     private notificacion: NotificacionesService,
     private estado: EstadoService
   ) {
-    this.modoEditar = false
     this.titulo = 'Crear producto'
   }
 
@@ -40,7 +38,6 @@ export class CrearProductoComponent implements OnInit {
     this.router.paramMap.subscribe(params => {
       if (params.get('id')) {
         this.idProducto = Number(params.get('id'))
-        this.modoEditar = true
         this.titulo = 'Actualizar producto'
         this.infoProducto()
       }
