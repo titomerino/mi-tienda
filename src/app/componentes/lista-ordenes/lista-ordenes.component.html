@@ -1,1 +1,38 @@
-<p>lista-ordenes works!</p>
+<h3>Listado de ordenes</h3>
+
+<p class="mt-4">
+  <button
+  [routerLink]="['agregar']"
+  type="button"
+  class="btn btn-primary"
+>Agregar Orden</button>
+</p>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Producto</th>
+    <th scope="col">Cliente</th>
+    <th scope="col">Cantidad</th>
+    <th scope="col">Fecha</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let orden of ORDENES; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ orden.nombreProducto }}</td>
+    <td>{{ orden.nombreCliente }}</td>
+    <td>{{ orden.cantidad }}</td>
+    <td>{{ orden.fecha | mask: '00-00-0000' }}</td>
+    <td>
+      <button
+        routerLink="mostrar/{{orden.id}}"
+        type="button"
+        class="btn btn-secondary"
+      >Editar</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

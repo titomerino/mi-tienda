@@ -6,11 +6,9 @@ import { HttpBaseService } from '../interfaz/http-servicio-base';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductosService extends HttpBaseService {
+export class OrdenesService extends HttpBaseService {
 
-  constructor(
-    protected http: HttpClient
-  ) {
-    super(http, environment.urlProductos);
+  constructor(protected http: HttpClient) {
+    super(http, environment.urlOrdenes);
   }
 }

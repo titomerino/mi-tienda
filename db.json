@@ -41,12 +41,36 @@
       "nit": "101-021545-1200-1"
     },
     {
-      "nombre": "Emiliano Pedroso 2",
-      "apellidos": "Quintanilla",
+      "id": "6",
+      "nombre": "Emiliano Pedroso",
+      "apellidos": "Merino",
       "telefono": "7878-7878",
       "correo": "merino@gmail.com",
-      "nit": "101-021545-1200-1",
-      "id": "KVLmpfc"
+      "nit": "101-021545-1200-1"
+    },
+    {
+      "id": 7,
+      "nombre": "Tito Isai",
+      "apellidos": "Merino",
+      "telefono": "78787878",
+      "correo": "merinotito@gmail.com",
+      "nit": "10101001010202"
+    },
+    {
+      "id": 8,
+      "nombre": "Eugenio Merino",
+      "apellidos": "Guerrero",
+      "telefono": "78457812",
+      "correo": "ueg@gmail.com",
+      "nit": "10201508405808"
+    },
+    {
+      "id": 9,
+      "nombre": "Nidia Gricelda",
+      "apellidos": "Perez Alfaro",
+      "telefono": "65859856",
+      "correo": "alfaronidia@gmail.com",
+      "nit": "12201210215485"
     }
   ],
   "ordenes": [
@@ -55,7 +79,21 @@
       "idCliente": "1",
       "idOrden": "1",
       "cantidad": "1",
-      "fecha": "15-5-2021"
+      "fecha": "15052021"
+    },
+    {
+      "idProducto": "2",
+      "idCliente": "1",
+      "idOrden": "2",
+      "cantidad": "5",
+      "fecha": "15052021"
+    },
+    {
+      "idProducto": "3",
+      "idCliente": "2",
+      "idOrden": "3",
+      "cantidad": "1",
+      "fecha": "15052021"
     }
   ],
   "productos": [
@@ -106,6 +144,24 @@
       "nombre": "Nissan sentra 2014",
       "descripcion": "Importado poco uso familiar.",
       "precio": 6500
+    },
+    {
+      "id": 9,
+      "nombre": "Mesa de sala",
+      "descripcion": "Mesa de sala para 15 personas",
+      "precio": 5550
+    },
+    {
+      "id": 10,
+      "nombre": "Piano Electrico",
+      "descripcion": "Piano electrico para mesa",
+      "precio": 1200
+    },
+    {
+      "id": 11,
+      "nombre": "Silla para gamer",
+      "descripcion": "Silla para personas que juegan mucho tiempo",
+      "precio": 154.23
     }
   ]
 }
