@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+import { CrearClienteComponent } from './componentes/crear-cliente/crear-cliente.component';
 import { CrearProductoComponent } from './componentes/crear-producto/crear-producto.component';
 import { ListaClientesComponent } from './componentes/lista-clientes/lista-clientes.component';
 import { ListaOrdenesComponent } from './componentes/lista-ordenes/lista-ordenes.component';
@@ -25,6 +26,14 @@ const routes: Routes = [
   {
     path: 'clientes',
     component: ListaClientesComponent
+  },
+  {
+    path: 'clientes/agregar',
+    component: CrearClienteComponent
+  },
+  {
+    path: 'clientes/mostrar/:id',
+    component: CrearClienteComponent
   },
   {
     path: 'ordenes',

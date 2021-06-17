@@ -10,11 +10,17 @@ import { ClientesService } from './servicios/clientes.service';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing-module';
 import { CrearProductoComponent } from './componentes/crear-producto/crear-producto.component';
+import { CrearClienteComponent } from './componentes/crear-cliente/crear-cliente.component';
+import { NotificacionComponent } from './componentes/notificacion/notificacion.component';
+import { EstadoComponent } from './componentes/estado/estado.component';
 
 /** Forms */
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { NotificacionComponent } from './componentes/notificacion/notificacion.component';
-import { EstadoComponent } from './componentes/estado/estado.component';
+
+/** Input mask */
+import {NgxMaskModule, IConfig} from 'ngx-mask';
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import { EstadoComponent } from './componentes/estado/estado.component';
     ListaOrdenesComponent,
     CrearProductoComponent,
     NotificacionComponent,
-    EstadoComponent
+    EstadoComponent,
+    CrearClienteComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +39,7 @@ import { EstadoComponent } from './componentes/estado/estado.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxMaskModule.forRoot(),
     NgbModule
   ],
   providers: [ClientesService],

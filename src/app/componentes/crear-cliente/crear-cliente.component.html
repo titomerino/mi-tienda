@@ -1,0 +1,96 @@
+<h3>{{titulo}}</h3>
+
+<p class="mt-4">
+  <button
+    class="btn btn-secondary"
+    routerLink="/clientes"
+    type="button"
+  >
+    Volver
+  </button>
+</p>
+
+<form
+  (ngSubmit)="agregar()"
+  name="Producto"
+  [formGroup]="formCliente"
+>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputNombre">Nombres *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputNombre"
+          formControlName="nombre"
+          required
+        >
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputApellidos">Apellidos *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputApellidos"
+          formControlName="apellidos"
+          required
+        >
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputTelefono">Teléfono *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputTelefono"
+          formControlName="telefono"
+          placeholder="0000-0000"
+          mask="0000-0000"
+          required
+        >
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputCorreo">Correo *</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputCorreo"
+          formControlName="correo"
+          required
+        >
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="inputNit">Nit *</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputNit"
+          formControlName="nit"
+          placeholder="0000-000000-000-0"
+          mask="0000-000000-000-0"
+          required
+        >
+      </div>
+    </div>
+  </div>
+  <small class="form-text text-muted">
+    * campos obligatorios.
+  </small>
+  <hr>
+  <div class="">
+    <button
+      class="btn btn-primary"
+      type="submit"
+    >Guardar</button>
+  </div>
+</form>

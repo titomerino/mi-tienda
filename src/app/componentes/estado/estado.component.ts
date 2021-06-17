@@ -20,7 +20,6 @@ export class EstadoComponent implements OnInit, OnDestroy {
 
   constructor(private estado: EstadoService) {
     this.subscription = this.estado.getLoadingStatus().subscribe(data => {
-      console.log('cambiando...');
       this.status = (data as Loading).activated;
       this.mensaje = (data as Loading).mensaje;
     });
